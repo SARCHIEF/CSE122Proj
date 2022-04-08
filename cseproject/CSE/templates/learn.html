@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn | ChiefTech</title>  
+  <link rel="stylesheet" type="text/css" href="{% static 'styl.css'%}"> 
+  </head>
+  <body>
+      <!-- Advert Banner-->
+    <img src="{% static 'images/advert.png'%}" id="advert">
+    
+    </header>
+      <!--HEADER CODE BEGIN HERE-->
+    <header id="head">
+      <img src="{% static 'images/chieftech.png'%}">
+      <a href={% url 'index' %}> Home </a>
+      <a href={% url 'learn' %}> Learn </a>
+      <a href={% url 'develope' %}> Develop </a>
+      <a href={% url 'sell' %}> Sell </a>
+      <a href={% url 'contacts' %}> Contact </a>
+      <button type="submit">Login</button>
+      <button type="submit">Sign Up</button>
+      <!--HEADER CODE ENDS HERE-->
+    </header>
+        <!-- First Section Code Begin Here-->
+        <section id="hero3">
+          <div id="hero-text3">
+            <h1> 
+              <b>HOW TO START <br>LEARNING <br>CODING </b>
+           </h1>
+            <h5>
+              Learning coding takes time, it demands patience and motivation to never give
+              up in spite of challenges on the way. If you are able to persist to understand
+              the concept it will later become a fun thing for you to do.
+            </h5>
+            <h5>
+              The first and foremost step you must take is to choose the right language to
+              learn. However, before you do that you may need to learn markup structure 
+              like <b class="html">HTML.</b> It is an important language for any programmer to learn and have 
+              a glance of the concept of <b class="html">HTML</b> whether you want to become a web developer, 
+              apps developer, a game developer, or simply writing useful programs. 
+              <b class="html">HTML stands for "Hypertext Markup Language".</b> It is the language you will 
+              need to build structure for your programs, this is because <b class="html">HTML</b> is the 
+              skeleton for website apps and other computer programs.
+            </h5>
+          </div>
+    
+         <div class="hero-image3">
+          <video src="{% static 'videos/codingvideo2.mp4'%}"
+          poster="{% static 'images/codingstep.png'%}"
+          width="99%" height="75%"
+          preload
+          controls
+          loop>
+         </div>
+       </section>
+          <!-- First Section Code Ends Here-->
+
+    <!-- KeyChief and HTML Picture Images are Here -->
+      <div>
+        <img src="{% static 'images/keychief4.png'%}" id="key">
+      </div>
+      <div>
+      <img src="{% static 'images/htmlpicture.jpg'%}" id="html">
+      </div>
+
+      <!-- Second Section Code Begin Here-->
+    <section id="hero4">
+      <div class="hero-image4">
+        <img src="{% static 'images/css.jpg'%}" id="hero-picture4">
+     </div>
+      <div id="hero-text4">
+        <h1> 
+          <b>BEAUTY OF WEBSITE</b>
+       </h1>
+        <h5>
+          The next thing you may need to have a glance at is the styling sheet, that is  <b>CSS.
+          CSS stands for "Cascading Style Sheet".</b> it is what you will use to beautify your 
+          website or apps and make them look great to use. After you have gotten some 
+          knowledge of <b class="html">HTML</b> and <b>CSS</b> and their framework, the next thing is to choose the
+          right programming language for yourself. For example if you want to specialize 
+          in web development the best way to go is to learn JavaScript. If on the other 
+          hand you want to develop web apps you can start with python which is easier to 
+          learn.
+        </h5><br><br><br>
+       <a href="{% url 'develope' %}" id="excel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+         <img src="{% static 'images/logo.png'%}"> Start Coding Now and Excel </a>
+      </div>
+      <div class="hero-image4">
+        <img src="{% static 'images/css2.png'%}" id="hero-picture4">
+     </div>
+   </section>
+
+     <!-- Third Section Code Begin Here-->
+    <section id="hero5">
+        <div class="hero-image5">
+            <img src="{% static 'images/top10.png'%}" id="hero-picture5">
+        </div>
+        <div id="hero-text5">
+          <h1> 
+            <b>TOP <b class="html">PROGRAMMING</b> LANGUAGES</b>
+        </h1>
+        </div>
+        <div class="hero-image5">
+        <img src="{% static 'images/html.png'%}" id="hero-picture5">
+        </div>
+        <div id="hero-text5">
+          <h1> 
+            <b>WEB <b class="html">LANGUAGES</b></b>
+        </h1>
+        </div>
+        <div class="hero-image5">
+        <img src="{% static 'images/weblanguage.jpg'%}" id="hero-picture5">
+        </div>
+     </section>
+        <!-- Footer Code is Here-->
+    <footer id="footer">
+      <h6> 2021 &copy; ChiefTech All Rights Reserved. | 
+        <a href="#head">Terms of Use</a> |
+        <a href="#rating"> Privacy Policy </a>
+     </h6>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Develope | ChiefTech</title>  
+  <link rel="stylesheet" type="text/css" href="{% static 'styl.css'%}"> 
+</head>
+<body>
+  <!-- Advert Banner-->
+  <img src="{% static 'images/advert.png'%}" id="advert">
+
+<!--HEADER CODE BEGIN HERE-->
+<header id="head">
+  <img src="{% static 'images/chieftech.png'%}">
+  <a href={% url 'index' %}> Home </a>
+  <a href={% url 'learn' %}> Learn </a>
+  <a href={% url 'develope' %}> Develop </a>
+  <a href={% url 'sell' %}> Sell </a>
+  <a href={% url 'contacts' %}> Contact </a>
+  <button type="submit">Login</button>
+  <button type="submit">Sign Up</button>
+  </header>
+
+ <!-- First Section Code Begin Here-->
+ <section id="hero6">
+  <div class="hero-image6">
+    <video src="{% static 'videos/codingvideo3.mp4'%}"
+    poster="{% static 'images/blackwhite.jpg'%}"
+    width="99%" height="75%"
+    preload
+    controls
+    loop>
+   </div>
+  <div id="hero-text6">
+    <h1> 
+      <b class="html">KEEP LEARNING AND NEVER GIVE UP</b><br>FOR HOW MUCH YOU KNOW IS 
+      HOW MUCH YOU CAN OFFER<br><b class="html">AND HOW MUCH YOU CAN OFFER IS HOW MUCH YOU CAN EARN.</b>
+   </h1>
+  </div>
+  <div class="hero-image3">
+    <video src="{% static 'videos/codingvideo.mp4'%}"
+    poster="{% static 'images/learncode.jpg'%}"
+    width="99%" height="75%"
+    id="play"
+    preload
+    controls
+    loop>
+   </div>
+</section>
+
+ <!-- Growth Image is Here -->
+ <div>
+  <img src="{% static 'images/growth.png'%}" id="key">
+</div>
+
+ <!-- Second Section Code Begin Here-->
+ <section id="hero7">
+    <div id="hero-text-edit">
+      <h1> 
+        <b>Learn to Manage Your Time </b><br><b class="learn">Learn to Become More Descipline 
+        and Organised </b><br><b> Evaluate Information Accuracy</b>
+     </h1>
+    </div>
+    <div class="hero-image7">
+      <img src="{% static 'images/bg1.png'%}" id="hero-picture7">
+   </div>
+  <div id="hero-text7">
+    <h1> 
+      <b>Prepare Yourself for the Outside World </b><br><b class="learn"> Learn to Deal with
+         Emergencies in a Calm and Effective Way </b><br><b> 
+      </b>Use Learning Beyound the 
+      Class Room
+   </h1>
+  </div>
+</section>
+
+     <!-- Footer Code is Here-->
+     <footer id="footer">
+      <h6> 2021 &copy; ChiefTech All Rights Reserved. | 
+        <a href="#head">Terms of Use</a> |
+        <a href="#rating"> Privacy Policy </a>
+     </h6>
+     </footer>
+</body>
+</html>

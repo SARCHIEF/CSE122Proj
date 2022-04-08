@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | ChiefTech</title>  
+  <link rel="stylesheet" type="text/css" href="{% static 'styl.css'%}"> 
+</head>
+<body>
+
+  <!-- Advert Banner-->
+  <img src="{% static 'images/advert.png'%}" id="advert">
+
+<!--HEADER CODE BEGIN HERE-->
+<header id="head">
+  <img src="{% static 'images/chieftech.png'%}">
+  <a href={% url 'index' %}> Home </a>
+  <a href={% url 'learn' %}> Learn </a>
+  <a href={% url 'develope' %}> Develop </a>
+  <a href={% url 'sell' %}> Sell </a>
+  <a href={% url 'contacts' %}> Contact </a>
+  <button type="submit">Login</button>
+  <button type="submit">Sign Up</button>
+  </header>
+
+<!--FORM CODE BEGIN HERE-->
+<div class="login-box">
+  <h2> GENERATE CONTACT </h2>
+  <form>
+    <div class="user-box">
+      <input type="text" name="" required="">
+      <label>Company Name and RC No </label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="" required="">
+      <label>Email or Phone</label>
+    </div>
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </a>
+  </form>
+</div>
+</body>
+</html>

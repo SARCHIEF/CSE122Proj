@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell | ChiefTech</title>  
+  <link rel="stylesheet" type="text/css" href="{% static 'styl.css'%}"> 
+</head>
+<body>
+
+  <!-- Advert Banner-->
+  <img src="{% static 'images/advert.png'%}" id="advert">
+  
+  <!--HEADER CODE BEGIN HERE-->
+  <header id="head">
+    <img src="{% static 'images/chieftech.png'%}">
+    <a href={% url 'index' %}> Home </a>
+    <a href={% url 'learn' %}> Learn </a>
+    <a href={% url 'develope' %}> Develop </a>
+    <a href={% url 'sell' %}> Sell </a>
+    <a href={% url 'contacts' %}> Contact </a>
+    <button type="submit">Login</button>
+    <button type="submit">Sign Up</button>
+    </header>
+
+        <!-- First Section Code Begin Here-->
+      <section id="hero8">
+          <div id="hero-text-develope">
+            <h1> 
+            <b>Your Motivation Will Increase As You Begin To See Results </b><br>
+            <b class="learn"> You Have Developed 
+            </b><br><b>You Feel Free Because You Have Been Focusing </b>
+        </h1>
+        </div>
+        <div id="hero-text8">
+          <h1> 
+            <b> You Have Become The Face Of The World </b><br><b class="learn"> Selling Your Amazing Ideas</b><br><b> 
+            </b>You Realise Truly With Hard Work You Can Achieve Your Dreams 
+        </h1>
+        </div>
+        <div class="hero-image8">
+          <img src="{% static 'images/bg3.png'%}" id="hero-picture8">
+      </div>
+    </section>
+
+      <!-- Hardwork Image is Here -->
+      <div>
+        <img src="{% static 'images/hardwork.png'%}" id="hardwork">
+      </div>
+
+        <!-- Second Section Code Begin Here-->
+    <section id="hero9">
+      <div class="hero-image9">
+        <img src="{% static 'images/bg2.png'%}" id="hero-picture9">
+    </div>
+        <div id="hero-text9">
+          <h1> 
+            <b class="html"> NOW ALL THE BEAUTIES AND HANDSOMES ARE AFTER YOU...</b>
+        </h1>
+        </div>
+    </section>
+
+    <!-- Footer Code is Here-->
+    <footer id="footer">
+      <h6> 2021 &copy; ChiefTech All Rights Reserved. | 
+        <a href="#head">Terms of Use</a> |
+        <a href="#rating"> Privacy Policy </a>
+      </h6>
+    </footer>
+</body>
+</html>

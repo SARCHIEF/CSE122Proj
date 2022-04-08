@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+          ChiefTech | Leading
+        </title>  
+      <link rel="stylesheet" type="text/css"  href="{% static 'styl.css'%}"> 
+  </head>
+  <body>
+    <!-- Advert Banner-->
+      <img src="{% static 'images/advert.png'%}" id="advert">
+
+    <!--Header Code Begin Here-->
+    <header id="head">
+      <img src="{% static 'images/chieftech.png'%}">
+      <a href={% url 'index' %}> Home </a>
+      <a href={% url 'learn' %}> Learn </a>
+      <a href={% url 'develope' %}> Develop </a>
+      <a href={% url 'sell' %}> Sell </a>
+      <a href={% url 'contacts' %}> Contact </a>
+      <button type="submit">Login</button>
+      <button type="submit">Sign Up</button>
+    </header>
+
+    <!-- First Section Code Starts Here-->
+    <section id="hero">
+
+      <div class="hero-image">
+        <img src="{% static 'images/hero.png'%}" id="hero-picture">
+      </div>
+
+      <div id="hero-text">
+        <h1> 
+          Become an <b class="html">IT Specialist</b> from <b class="html">Scratch</b> 
+        </h1>
+        <h5>
+         ChiefTech is a hub for the world’s top-notch programmers, program marketers
+         and most innovative product owners to build and sell softwares that matter.
+         Our training, marketplace empowers entrepreneurs and brands 
+         to grow online through global reach, powerful tools, and support you can trust.
+       </h5><br><br>
+        <a href="#hero2"><img src="{% static 'images/logo.png'%}"> Learn </a>
+       <p> Learn coding from scratch and progress to start making supreme
+          programs that matters</p>
+       <br>
+       <a href={% url 'sell' %}><img src="{% static 'images/logo.png'%}"> Sell </a>
+       <p>
+          The price you will offer yourself to the world, is how much they will buy you. 
+          Let's grow together and sell our idea, products, etc...
+       </p><br> 
+     </div>
+
+    </section>
+    <!-- First Section Code Ends Here-->
+
+    <!-- Rating and Empower Image is Here -->
+    <img src="{% static 'images/rating.png'%}" id="rating">
+    <img src="{% static 'images/empowerchief.png'%}" id="empower">
+
+
+    <!-- Second Section Code Begin Here-->
+    <section id="hero2">
+      <div id="hero-text2">
+        <h1> 
+          <b>What is coding? </b>
+       </h1>
+        <h5>
+          Coding, sometimes called computer programming, is how we communicate with
+          computers. Code tells a computer what actions to take, and writing code is 
+          like creating a set of instructions. By learning to write code, you can tell
+          computers what to do or how to behave in a much faster way. You can use this 
+          skill to make websites and apps, process data, and do lots of other cool things.
+        </h5><br>
+       <a href={% url 'learn' %}><img src="{% static 'images/logo.png'%}"> Learn More and Start Coding Now </a>
+      </div>
+
+     <div class="hero-image2">
+        <img src="{% static 'images/coding.jpg'%}" id="hero-picture2">
+     </div>
+   </section>
+
+    <!-- Footer Code is Here-->
+    <footer id="footer">
+     <h6> 2021 &copy; ChiefTech All Rights Reserved. | 
+       <a href="#head">Terms of Use</a> |
+       <a href="#rating"> Privacy Policy </a>
+    </h6>
+    </footer>
+  </body>
+</html>
